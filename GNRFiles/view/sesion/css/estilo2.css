@@ -1,0 +1,131 @@
+html{
+  box-sizing: border-box;
+}
+
+body{  
+  /*Seleccionamos el tipo de fuente*/
+  font-family: verdana, geneva, serif;
+  background-color: #f3f3fc;
+}
+/*------------------------------------------------------------------------------------------------*/
+.navegacion {
+    background-color: #333;
+    overflow: hidden;
+}
+.navegacion a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ul.clearfix,ul.clearfix ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.clearfix >li{
+  float: right;
+  position: relative;
+}
+ul.clearfix a{
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+ul.clearfix a:hover{
+  background-color: #3162ba;
+}
+ul.clearfix >li >ul{
+  display: none;
+  position: absolute;
+}
+ul.clearfix > li:hover > ul{
+  display: block;
+}
+ul.clearfix li > ul > li > a{
+  background-color: #333;
+}
+.clearfix a.active {
+    background-color: #333;
+    color: white;
+}
+/*------------------------------------------------------------------------------------------------*/
+
+.top {
+    background-color: #333;
+    overflow: hidden;
+}
+.top a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* cambia de color del campo de la barra a blanco segun donde este el mouse */
+.top a:hover {
+    background-color: #3162ba;
+    color: white;
+}
+
+/* si se hace click */
+.top a.active {
+    background-color: #333;
+    color: white;
+}
+/*FOODER DATOS DE LA EMPRESA*/
+
+/** FOOTER**/
+.nosotros{
+  background-color: #333;
+
+}
+.nosotros p{
+  color: white;
+}
+.contenido{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.contenido h3{
+  text-align: center;
+
+}
+.contenido thead{
+  background-color: #333;
+  color: white;
+}
+h2{
+  float: left;
+  margin-left: 15px;
+}
+footer {
+  background-color: #333;
+  padding-top: 10px;
+  margin-top:30px;
+}
+
+footer h3 {
+    color: white;
+}
+footer .contenedor::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer .nosotros {
+  float: center;
+  width: 30%;
+  color: white;
+}
+p.copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
